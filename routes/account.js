@@ -13,4 +13,11 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/:id', (request, response) => {
+    response.render('account-detail', {
+        title: 'Account Detail',
+        id: request.params.id
+    });
+});
+
 module.exports = router;

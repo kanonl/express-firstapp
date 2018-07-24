@@ -1,6 +1,10 @@
 {
     "name": "express-firstapp",
     "version": "1.0.0",
+    "engines": {
+        "node": "9.2.x",
+        "npm": "6.2.x"
+    },
     "description": "A simple Express app.",
     "main": "index.js",
     "scripts": {

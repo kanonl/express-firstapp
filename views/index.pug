@@ -1,0 +1,16 @@
+//- index.pug
+include includes/doctype
+html(lang="en")
+    include includes/head
+    body
+        .container
+            h1.message= message
+            main
+                p hello world!
+                p good-bye world!
+                .account
+                    a(href="/account") Account
+                ul.people-list
+                    each person in people
+                        li= person
+            include includes/footer

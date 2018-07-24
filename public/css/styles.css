@@ -1,0 +1,13 @@
+.people-list {
+    text-transform: uppercase;
+}
+
+.pug {
+    width: 150px;
+}
+
+.footer {
+    text-align: center !important;
+    font-size: 10px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}

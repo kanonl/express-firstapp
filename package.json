@@ -2,14 +2,14 @@
     "name": "express-firstapp",
     "version": "1.0.0",
     "engines": {
-        "node": "8.1.x",
-        "npm": "6.2.x"
+        "node": "8.1.4",
+        "npm": "6.2.0"
     },
     "description": "A simple Express app.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "npm run watch",
+        "start": "node index.js",
         "watch": "start npm run watch:js & start npm run watch:html",
         "watch:js": "onchange \"index.js\" -- node index.js"
     },

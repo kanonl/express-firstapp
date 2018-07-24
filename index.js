@@ -11,4 +11,4 @@ app.use('/account', accountRouter);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);

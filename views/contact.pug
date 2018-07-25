@@ -4,13 +4,14 @@ html(lang="en")
     include includes/head
     body
         .container
-            h1.display-2 Contact Us
-            form#form(role="form" class="form" method="POST")
-                .form-group
-                    input(type="text" class="form-control" id="name" name="name" placeholder="Name" value="Kanon Lo")
-                .form-group
-                    input(type="email" class="form-control" id="email" name="email" placeholder="Email" value="klo@jsls.com")
-                .form-group
-                    textarea(class="form-control" id="message" name="message" rows="4" placeholder="Message") Hello, World!
+            include includes/navbar
+            h1 Contact Us
+            p Contact one of our sleep experts and we’ll get back to you as soon as possible. During non sleeping hours, we generally respond within twelve hours.
+            form#form.form(role="form" method="POST")
+                .form-row
+                    .col: input.form-control(type="text" id="name" name="name" placeholder="Name")
+                    .col: input.form-control(type="email" id="email" name="email" placeholder="Email")
+                .form-group.mt-4
+                    textarea.form-control(id="message" name="message" rows="4" placeholder="")
                 button.btn.btn-primary(type="submit") Send
             include includes/footer

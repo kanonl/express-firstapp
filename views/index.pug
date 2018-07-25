@@ -4,14 +4,14 @@ html(lang="en")
     include includes/head
     body
         .container
-            h1.message= message
-            main
-                p hello world!
-                p good-bye world!
-                p another paragraph.
-                .account
-                    a(href="/account") Account
-                ul.people-list
-                    each person in people
-                        li= person
+            include includes/navbar
+            .jumbotron.mt-4
+                h1.display-4= title
+                p.lead= message
+                hr.my-4
+                p Our <a href="#">support</a> experts are available to assist you 24x7. Get your questions answered in minutes.
+                p.lead: a.btn.btn-primary.btn-lg(href="#" role="button") Learn more
+                //- ul
+                //-     each person in people
+                //-         li= person
             include includes/footer

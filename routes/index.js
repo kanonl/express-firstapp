@@ -3,14 +3,13 @@ const express = require('express'),
 
 router.get('/', (req, res) => {
     res.render('index', {
-        title: 'hey',
-        message: 'hello',
+        title: 'Simple. Powerful. Reliable.',
+        message: 'Whether you’re just getting started or deploying a complex system, launching a Linode cloud server has never been easier. We offer the fastest hardware and network in the industry with scalable environments.',
         people: [
-            'kanon',
-            'steve',
-            'dave',
-            'frank',
-            'green tea'
+            'Leonardo',
+            'Donatello',
+            'Michelangelo',
+            'Raphael'
         ]
     });
 });

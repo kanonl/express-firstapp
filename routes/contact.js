@@ -1,9 +1,8 @@
 const express = require('express'),
     bodyParser = require('body-parser'),
-    mailgunConfig = require('../mailgun.config'),
     urlencodedParser = bodyParser.urlencoded({ extended: true }),
     router = express.Router(),
-    mailgun = require('mailgun-js')({ apiKey: mailgunConfig.apiKey, domain: mailgunConfig.domain });
+    mailgun = require('mailgun-js')({ apiKey: process.env.MAILGUN_APIKEY, domain: process.env.MAILGUN_DOMAIN });
 
 router.get('/', (request, response) => {
     response.render('contact', {
@@ -13,8 +12,8 @@ router.get('/', (request, response) => {
 
 router.post('/', urlencodedParser, (request, response) => {
     let envelope = {
-        from: mailgunConfig.from,
-        to: mailgunConfig.to,
+        from: process.env.MAILGUN_FROM,
+        to: process.env.MAILGUN_TO,
         subject: 'mailgun-js test message',
         text: `${request.body.name} (${request.body.email}) sent you a message: ${request.body.message}`
     };

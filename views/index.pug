@@ -4,14 +4,17 @@ html(lang="en")
     include includes/head
     body
         .container
-            include includes/navbar
-            .jumbotron.mt-4
-                h1.display-4= title
-                p.lead= message
-                hr.my-4
-                p Our <a href="#">support</a> experts are available to assist you 24x7. Get your questions answered in minutes.
-                p.lead: a.btn.btn-primary.btn-lg(href="#" role="button") Learn more
-                //- ul
-                //-     each person in people
-                //-         li= person
+            header.mb-4
+                include includes/navbar
+            main
+                .jumbotron
+                    h1.display-4= title
+                    p.lead= message
+                    hr.my-4
+                    p Our <a href="#">support</a> experts are available to assist you 24x7. Get your questions answered in minutes.
+                    p.lead: a.btn.btn-primary.btn-lg(href="#" role="button") Learn more
+                    if monitors.length > 0
+                        ul
+                            each monitor in monitors
+                                li= monitor
             include includes/footer

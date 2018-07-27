@@ -1,9 +1,10 @@
-.pug {
-    width: 150px;
-}
-
 .footer {
     text-align: center !important;
     font-size: 10px;
     font-family: 'Segoe UI', 'Arial', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 1rem;
 }

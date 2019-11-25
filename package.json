@@ -16,10 +16,11 @@
     "author": "Kanon Lo",
     "license": "ISC",
     "dependencies": {
-        "body-parser": "^1.18.3",
-        "compression": "^1.7.3",
-        "express": "^4.16.3",
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "express": "^4.17.1",
+        "helmet": "^3.21.2",
         "mailgun-js": "^0.20.0",
-        "pug": "^2.0.3"
+        "pug": "^2.0.4"
     }
 }
